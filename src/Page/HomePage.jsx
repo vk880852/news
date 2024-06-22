@@ -15,7 +15,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=${import.meta.env.VITE_API_KEY}`);
+        const res = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=8a828b6a1ffe452daa7cf7b7775eb74d`);
         setProducts(res.data.articles);
         dispatch(addTodo(res.data.articles));
         setLoading(false); 

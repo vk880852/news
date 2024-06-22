@@ -17,7 +17,7 @@ const Category = () => {
       setLoading(true);
       setError('');
       try {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`); // Replace with your actual API endpoint
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=8a828b6a1ffe452daa7cf7b7775eb74d`); // Replace with your actual API endpoint
         setData(response.data.articles);
       } catch (error) {
         setError(`Something went wrong: ${error.message}`);
